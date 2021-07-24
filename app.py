@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import smtplib, ssl
+import sys
 from email.message import EmailMessage
 
 app = Flask(__name__)
@@ -45,5 +46,10 @@ def email_enquiry():
         return render_template("email.html")
 
 
-# if __name__ == "__main__":
-#     app.run("0.0.0.0", port=2021, debug=True)
+if __name__ == "__main__":
+    print(f"Arguments count: {len(sys.argv)}")
+    for i, arg in enumerate(sys.argv):
+        print(f"Argument {i:>6}: {arg}")
+        if arg == "local":
+            app.run("0.0.0.0", port=2021, debug=True)
+
