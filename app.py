@@ -19,13 +19,19 @@ def email_enquiry():
             firstname = request.form["firstname"]
             subject = request.form["subject"]
             context = request.form["context"]
+            email_tmp_file = request.form["templatelist"]
             smtp_server = "smtp.gmail.com"
-            sender_email = "luviertcc@gmail.com"
-            password = "fsxdgqrcavgcsfyc"
+            sender_email = "your email"
+            password = "your app password"
+
+            # load an email template
+            with open(f"./templates/emails/{email_tmp_file}.txt") as f:
+                email_template = f.read()
+            content = email_template.format(firstname=firstname, context=context)
 
             # setup email message
             msg = EmailMessage()
-            msg.set_content(context)
+            msg.set_content(content)
             msg['Subject'] = subject
 
             # setup smtp server and send email
@@ -44,7 +50,6 @@ def email_enquiry():
 
     else:
         return render_template("email.html")
-
 
 if __name__ == "__main__":
     print(f"Arguments count: {len(sys.argv)}")

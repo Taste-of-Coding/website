@@ -1,0 +1,9 @@
+Dear {firstname},
+
+{context}
+
+Thank you very much and I am looking forward to hearing from you soon.
+
+Best regards,
+
+Your Name
