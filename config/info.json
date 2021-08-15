@@ -1,0 +1,73 @@
+{
+    "email": "castieltong@gmail.com",
+    "github": "https://github.com/cctong-castiel",
+    "name": "Castiel TOng",
+    "about": [
+        {
+            "title": "Data Scientist",
+            "image": "castiel_thinkcol_profilepic.jpg",
+            "height": "",
+            "dimension": ""
+        },
+        {
+            "title": "Chatbot Trainer",
+            "image": "2.jpg",
+            "height": "",
+            "dimension": ""
+        },
+        {
+            "title": "Coding Tutor",
+            "image": "castiel_tutor4.jpg",
+            "height": "343px;",
+            "dimension": ["200px;", "222.5px;"]
+        },
+        {
+            "title": "Running Lover",
+            "image": "castiel_running.png",
+            "height": "343px;",
+            "dimension": ["180px;", "222.5px;"]
+        }
+    ],
+    "skills": [
+        {
+            "name": "NLP",
+            "icon": "skills_nlp.png",
+            "examples": ["Topic Modelling", "Word Embedding", "Clustering"]            
+        },
+        {
+            "name": "Deep Learning",
+            "icon": "skills_dl.png",
+            "examples": ["Tensorflow & Keras", "RNN & LSTM", "CNN"]            
+        },
+        {
+            "name": "Chatbot Solution",
+            "icon": "skills_chatbot.png",
+            "examples": ["Rasa Core", "Rasa NLU", "Dialogflow CX & ES"]            
+        },
+        {
+            "name": "Programming Languages",
+            "icon": "skills_language.png",
+            "examples": ["Python", "Java", "NodeJS"]            
+        },
+        {
+            "name": "",
+            "icon": "",
+            "examples": []            
+        },
+        {
+            "name": "Database",
+            "icon": "skills_db.png",
+            "examples": ["PostgreSQL", "Neo4j", "ArangoDB"]            
+        },
+        {
+            "name": "DevOps",
+            "icon": "skills_devops.png",
+            "examples": ["Git", "Docker", "Heroku", "AWS Cloudformation", "Kubernetes"]            
+        },
+        {
+            "name": "",
+            "icon": "",
+            "examples": []            
+        }
+    ]
+}

@@ -1,13 +1,24 @@
 from flask import Flask, render_template, request
 import smtplib, ssl
+import os
 import sys
+import json
 from email.message import EmailMessage
+import datetime
+
+ssl_context = ('localhost.crt', 'localhost.key')
 
 app = Flask(__name__)
 
+now = datetime.datetime.now()
+
+with open(os.path.join(os.getcwd(), "config/info.json"), "r") as f:
+    info = json.load(f)
+info["year"] = now.year
+
 @app.route("/")
 def hello():
-    return render_template("main.html")
+    return render_template("main.html", **info)
 
 
 @app.route("/enquiry", methods=["POST", "GET"])
@@ -21,8 +32,8 @@ def email_enquiry():
             context = request.form["context"]
             email_tmp_file = request.form["templatelist"]
             smtp_server = "smtp.gmail.com"
-            sender_email = "your email"
-            password = "your app password"
+            sender_email = "sender_email"
+            password = "password"
 
             # load an email template
             with open(f"./templates/emails/{email_tmp_file}.txt") as f:
@@ -56,5 +67,5 @@ if __name__ == "__main__":
     for i, arg in enumerate(sys.argv):
         print(f"Argument {i:>6}: {arg}")
         if arg == "local":
-            app.run("0.0.0.0", port=2021, debug=True)
+            app.run("0.0.0.0", port=2021, debug=True, ssl_context=ssl_context)
 
