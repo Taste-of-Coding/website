@@ -1,31 +1,31 @@
 {
-    "email": "castieltong@gmail.com",
-    "github": "https://github.com/cctong-castiel",
-    "name": "Castiel TOng",
+    "email": "happiernow@gmail.com",
+    "github": "https://github.com/happiernow",
+    "name": "Happier",
     "about": [
         {
-            "title": "Data Scientist",
-            "image": "castiel_thinkcol_profilepic.jpg",
+            "title": "Colleague 1",
+            "image": "1.jpg",
             "height": "",
             "dimension": ""
         },
         {
-            "title": "Chatbot Trainer",
+            "title": "Colleague 2",
             "image": "2.jpg",
             "height": "",
             "dimension": ""
         },
         {
-            "title": "Coding Tutor",
-            "image": "castiel_tutor4.jpg",
-            "height": "343px;",
-            "dimension": ["200px;", "222.5px;"]
+            "title": "Colleague 3",
+            "image": "3.jpg",
+            "height": "",
+            "dimension": ""
         },
         {
-            "title": "Running Lover",
-            "image": "castiel_running.png",
-            "height": "343px;",
-            "dimension": ["180px;", "222.5px;"]
+            "title": "Colleague 4",
+            "image": "4.jpg",
+            "height": "",
+            "dimension": ""
         }
     ],
     "skills": [
