@@ -5,3 +5,4 @@ scripts/ssl.sh
 localhost.crt 
 localhost.key
 __pycache__/**
+.DS_Store
